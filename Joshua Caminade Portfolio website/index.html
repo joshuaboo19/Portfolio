@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshua Caminade — Social Media & KOL Manager</title>
+<meta name="description" content="Joshua Caminade is a Social Media Manager specializing in multi-platform campaigns, content strategy, and analytics-driven growth, with additional experience in community and KOL management across the iGaming industry.">
+<meta name="author" content="Joshua Caminade">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Joshua Caminade — Social Media Manager">
+<meta property="og:description" content="Social Media Manager specializing in multi-platform campaigns, content strategy, and analytics-driven growth.">
+<meta property="og:type" content="website">
+
+<!-- Structured data for search engines & AI crawlers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Joshua Caminade",
+  "jobTitle": "Social Media Manager",
+  "email": "mailto:joshuacaminade6@gmail.com",
+  "knowsAbout": ["Social Media Management", "Content Strategy", "Social Media Advertising", "Community Management", "KOL Management", "Influencer Marketing"],
+  "alumniOf": [
+    {"@type":"CollegeOrUniversity","name":"La Conception College"},
+    {"@type":"CollegeOrUniversity","name":"First City Providential College"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0b0a12;
+    --bg-soft: #131120;
+    --card: #17152a;
+    --line: #2a2740;
+    --text: #f7f6fb;
+    --text-muted: #9c96b5;
+    --violet: #a855f7;
+    --pink: #ec4899;
+    --pink-bright: #ff6ec7;
+    --gradient: linear-gradient(135deg, var(--violet) 0%, var(--pink) 55%, var(--pink-bright) 100%);
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  ::selection{ background: var(--pink); color:#fff; }
+
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing:-0.02em;
+  }
+
+  .mono{
+    font-family:'JetBrains Mono', monospace;
+    letter-spacing:0.02em;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+
+  .wrap{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+    backdrop-filter: blur(12px);
+    background: rgba(11,10,18,0.7);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:72px;
+  }
+  .logo{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:1.1rem;
+  }
+  .logo span{
+    background: var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .nav-links{ display:flex; gap:36px; }
+  .nav-links a{
+    font-size:0.9rem;
+    color: var(--text-muted);
+    transition:color .2s ease;
+  }
+  .nav-links a:hover{ color: var(--text); }
+  .nav-cta{
+    padding:10px 20px;
+    border-radius:100px;
+    background: var(--gradient);
+    font-size:0.85rem;
+    font-weight:600;
+    color:#fff !important;
+  }
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:72px;
+    overflow:hidden;
+  }
+  .orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.55;
+    z-index:0;
+    animation: drift 16s ease-in-out infinite alternate;
+  }
+  .orb-1{
+    width:520px; height:520px;
+    background: radial-gradient(circle, var(--violet), transparent 70%);
+    top:-120px; right:-100px;
+  }
+  .orb-2{
+    width:420px; height:420px;
+    background: radial-gradient(circle, var(--pink), transparent 70%);
+    bottom:-140px; left:-120px;
+    animation-delay: -6s;
+  }
+  @keyframes drift{
+    from{ transform: translate(0,0) scale(1); }
+    to{ transform: translate(30px,-20px) scale(1.08); }
+  }
+  @media (prefers-reduced-motion: reduce){ .orb{ animation:none; } }
+
+  .hero-inner{ position:relative; z-index:1; }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.8rem;
+    color: var(--pink-bright);
+    margin-bottom:24px;
+    text-transform:uppercase;
+  }
+  .eyebrow::before{
+    content:'';
+    width:8px; height:8px;
+    border-radius:50%;
+    background: var(--gradient);
+    display:inline-block;
+  }
+  .hero h1{
+    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    font-weight:700;
+    line-height:1.02;
+    margin-bottom:20px;
+  }
+  .hero h1 .grad{
+    background: var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero .role{
+    font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+    color: var(--text-muted);
+    max-width:600px;
+    margin-bottom:40px;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+  .btn-primary{
+    padding:14px 28px;
+    border-radius:100px;
+    background: var(--gradient);
+    font-weight:600;
+    font-size:0.95rem;
+    color:#fff;
+  }
+  .btn-ghost{
+    padding:14px 28px;
+    border-radius:100px;
+    border:1px solid var(--line);
+    font-weight:600;
+    font-size:0.95rem;
+  }
+  .btn-ghost:hover{ border-color: var(--pink); }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{ padding:120px 0; position:relative; }
+  .section-tag{
+    font-size:0.8rem;
+    color: var(--pink-bright);
+    text-transform:uppercase;
+    margin-bottom:12px;
+    display:block;
+  }
+  .section-title{
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight:700;
+    margin-bottom:48px;
+    max-width:640px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-text{
+    font-size:1.1rem;
+    color: var(--text-muted);
+    max-width:760px;
+  }
+  .about-text p + p{ margin-top:20px; }
+
+  /* ---------- EXPERIENCE FEED ---------- */
+  .feed{
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+    background: var(--line);
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .post{
+    background: var(--card);
+    padding:36px;
+    display:grid;
+    grid-template-columns:56px 1fr;
+    gap:20px;
+    transition: background .25s ease;
+  }
+  .post:hover{ background:#1c1a32; }
+  .avatar{
+    width:56px; height:56px;
+    border-radius:16px;
+    background: var(--gradient);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    color:#fff;
+    font-size:1.2rem;
+  }
+  .post-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:6px;
+  }
+  .post-role{ font-weight:600; font-size:1.05rem; }
+  .post-company{ color: var(--pink-bright); }
+  .post-tag{
+    font-size:0.75rem;
+    color: var(--text-muted);
+    padding:4px 10px;
+    border:1px solid var(--line);
+    border-radius:100px;
+  }
+  .post ul{
+    margin-top:14px;
+    padding-left:18px;
+    color: var(--text-muted);
+    font-size:0.95rem;
+  }
+  .post li{ margin-bottom:6px; }
+  .post li::marker{ color: var(--pink); }
+  .post-img{
+    margin-top:20px;
+    width:100%;
+    display:block;
+    border-radius:14px;
+    border:1px solid var(--line);
+  }
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+  }
+  @media (max-width:720px){ .skills-grid{ grid-template-columns:1fr; } }
+  .pill-group{ display:flex; flex-wrap:wrap; gap:10px; }
+  .pill{
+    padding:10px 18px;
+    border-radius:100px;
+    border:1px solid var(--line);
+    font-size:0.9rem;
+    background: var(--card);
+  }
+  .pill.tool{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.82rem;
+    color: var(--pink-bright);
+    border-color: rgba(236,72,153,0.35);
+  }
+  .group-label{
+    font-size:0.85rem;
+    color: var(--text-muted);
+    text-transform:uppercase;
+    margin-bottom:16px;
+    display:block;
+  }
+
+  /* ---------- EDUCATION ---------- */
+  .edu-card{
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:32px;
+    background: var(--card);
+    margin-bottom:20px;
+  }
+  .edu-school{ font-weight:600; font-size:1.15rem; margin-bottom:4px; }
+  .edu-course{ color: var(--text-muted); font-size:0.95rem; }
+
+  /* ---------- PORTFOLIO GALLERY ---------- */
+  .gallery-label{
+    font-size:0.85rem;
+    color: var(--pink-bright);
+    text-transform:uppercase;
+    margin: 8px 0 20px;
+    display:block;
+  }
+  .gallery-label:not(:first-child){ margin-top:48px; }
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+    gap:16px;
+  }
+  .gallery-item{
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    aspect-ratio:1/1;
+    background: var(--card);
+  }
+  .gallery-item img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+    transition: transform .5s ease;
+  }
+  .gallery-item:hover img{ transform: scale(1.08); }
+
+  /* ---------- CAROUSEL SAMPLE ---------- */
+  .carousel-track{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding:4px 4px 16px;
+    scrollbar-width:none;
+  }
+  .carousel-track::-webkit-scrollbar{ display:none; }
+  .carousel-slide{
+    flex:0 0 auto;
+    width:230px;
+    aspect-ratio:4/5;
+    border-radius:16px;
+    overflow:hidden;
+    scroll-snap-align:center;
+    border:1px solid var(--line);
+    position:relative;
+  }
+  .carousel-slide img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .carousel-slide .slide-index{
+    position:absolute;
+    top:12px; left:12px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.75rem;
+    padding:4px 10px;
+    border-radius:100px;
+    background: rgba(11,10,18,0.6);
+    backdrop-filter: blur(6px);
+  }
+  .carousel-nav{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    margin-top:24px;
+  }
+  .carousel-btn{
+    width:44px; height:44px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background: var(--card);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition: border-color .2s ease;
+  }
+  .carousel-btn:hover{ border-color: var(--pink); }
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    text-align:center;
+    position:relative;
+  }
+  .contact h2{
+    font-size: clamp(2rem, 6vw, 3.4rem);
+    margin-bottom:24px;
+  }
+  .contact .grad{
+    background: var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .contact-email{
+    display:inline-block;
+    margin-top:12px;
+    padding:18px 36px;
+    border-radius:100px;
+    background: var(--gradient);
+    font-weight:600;
+    color:#fff;
+    font-size:1.05rem;
+  }
+
+  .contact-links{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:24px;
+  }
+  .contact-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 24px;
+    border-radius:100px;
+    border:1px solid var(--line);
+    background: var(--card);
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .contact-link:hover{
+    border-color: var(--pink);
+    transform: translateY(-2px);
+  }
+  .contact-link-label{
+    font-size:0.75rem;
+    color: var(--pink-bright);
+    text-transform:uppercase;
+  }
+  .contact-link-value{
+    font-size:0.95rem;
+    font-weight:500;
+  }
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:32px 0;
+    text-align:center;
+    color: var(--text-muted);
+    font-size:0.85rem;
+  }
+
+  /* scroll reveal */
+  .reveal{
+    opacity:0;
+    transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in{ opacity:1; transform:none; }
+
+  @media (max-width:720px){
+    .nav-links{ display:none; }
+    section{ padding:80px 0; }
+    .post{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Joshua<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </div>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow mono">Available for new opportunities</span>
+    <h1>Joshua Caminade<br><span class="grad">social media</span><br>that performs.</h1>
+    <p class="role">Social Media Manager specializing in multi-platform campaigns, content strategy, and analytics-driven growth — with additional experience in community and KOL management across the iGaming space.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">Let's work together</a>
+      <a class="btn-ghost" href="#experience">See my experience</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <span class="section-tag mono">01 · About</span>
+    <h2 class="section-title reveal">Social media, backed by data.</h2>
+    <div class="about-text reveal">
+      <p>I'm a professional with deep expertise in social media management — crafting compelling content, optimizing performance through analytics, and building vibrant online communities that strengthen brand presence and drive measurable growth across every major platform.</p>
+      <p>Alongside this, I bring additional experience in community management and KOL (Key Opinion Leader) collaborations. I've cultivated relationships with influencers, partners, and communities to expand reach and credibility — combining creativity with data-driven insight so every initiative builds trust and supports sustainable long-term growth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="section-tag mono">02 · Experience</span>
+    <h2 class="section-title reveal">Social media management, in action.</h2>
+
+    <div class="feed reveal">
+      <div class="post">
+        <div class="avatar">TG</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">Social Media Manager <span class="post-company">@ TGBet</span></span>
+            <span class="post-tag mono">Launch from scratch</span>
+          </div>
+          <ul>
+            <li>Managed multi-platform social media campaigns to boost visibility and engagement</li>
+            <li>Monitored analytics to track performance and refine campaign strategies</li>
+            <li>Coordinated influencer (KOL) partnerships to expand reach and credibility</li>
+          </ul>
+          <img class="post-img" src="images/experience/tgbet.png" alt="TGBet social media and KOL management screenshots" loading="lazy">
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="avatar">5A</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">Social Media Manager <span class="post-company">@ 5APoker</span></span>
+            <span class="post-tag mono">Launch from scratch</span>
+          </div>
+          <ul>
+            <li>Drove business growth through partnerships and market expansion</li>
+            <li>Managed multi-platform social media campaigns to boost visibility and engagement</li>
+            <li>Monitored analytics to track performance and refine campaign strategies</li>
+            <li>Built and maintained strong relationships with key opinion leaders and partners</li>
+          </ul>
+          <img class="post-img" src="images/experience/5apoker.png" alt="5APoker social media and KOL management screenshots" loading="lazy">
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="avatar">NT</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">Social Media Management <span class="post-company">@ Nestree</span></span>
+          </div>
+          <ul>
+            <li>Repurposed press releases into engaging content for Nestree</li>
+            <li>Managed Nestree's social media channels to grow visibility and engagement</li>
+            <li>Expanded outreach by engaging on platforms like Reddit and Quora</li>
+          </ul>
+          <img class="post-img" src="images/experience/nestree.png" alt="Nestree community and social media management screenshots" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="other-experience">
+  <div class="wrap">
+    <span class="section-tag mono">03 · Other Experience</span>
+    <h2 class="section-title reveal">Community & KOL management.</h2>
+
+    <div class="feed reveal">
+      <div class="post">
+        <div class="avatar">AM</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">Community Manager <span class="post-company">@ AMAKUNI</span></span>
+          </div>
+          <ul>
+            <li>Grew and engaged online communities through targeted strategies</li>
+            <li>Moderated forums and social channels to ensure positive interaction</li>
+            <li>Created content that fostered discussion and brand loyalty</li>
+            <li>Collected and analyzed feedback to improve campaigns and products</li>
+            <li>Built strong relationships with members, influencers, and stakeholders</li>
+          </ul>
+          <img class="post-img" src="images/experience/amakuni.png" alt="AMAKUNI community management Discord screenshot" loading="lazy">
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="avatar">KTX</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">KOL Management <span class="post-company">@ KTX Finance</span></span>
+          </div>
+          <ul>
+            <li>Sourced and onboarded relevant influencers/KOLs</li>
+            <li>Coordinated campaigns and collaborations with KOLs</li>
+            <li>Managed relationships to ensure long-term partnerships</li>
+            <li>Tracked performance of influencer campaigns</li>
+          </ul>
+          <img class="post-img" src="images/experience/ktx-finance.png" alt="KTX Finance KOL management screenshots" loading="lazy">
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="avatar">NT</div>
+        <div>
+          <div class="post-head">
+            <span class="post-role">Community Management <span class="post-company">@ Nestree</span></span>
+          </div>
+          <ul>
+            <li>Built and nurtured community relationships to strengthen brand presence</li>
+            <li>Developed partnerships with other projects, fostering collaboration and cross-community growth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <span class="section-tag mono">04 · Portfolio</span>
+    <h2 class="section-title reveal">Creative design samples.</h2>
+
+    <span class="gallery-label mono">iGaming creatives</span>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item"><img src="images/igaming-1.png" alt="iGaming creative design 1" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-2.png" alt="iGaming creative design 2" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-3.png" alt="iGaming creative design 3" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-4.png" alt="iGaming creative design 4" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-5.png" alt="iGaming creative design 5" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-6.png" alt="iGaming creative design 6" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-7.png" alt="iGaming creative design 7" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/igaming-8.png" alt="iGaming creative design 8" loading="lazy"></div>
+    </div>
+
+    <span class="gallery-label mono">Other creatives</span>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item"><img src="images/other-1.png" alt="Other creative design 1" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/other-2.png" alt="Other creative design 2" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/other-3.png" alt="Other creative design 3" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/other-4.png" alt="Other creative design 4" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/other-5.png" alt="Other creative design 5" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="carousel-sample">
+  <div class="wrap">
+    <span class="section-tag mono">05 · Carousel Sample</span>
+    <h2 class="section-title reveal">Instagram carousel design.</h2>
+    <div class="reveal" style="border-radius:20px; overflow:hidden; border:1px solid var(--line);">
+      <img src="images/carousel-full.png" alt="FIFA World Cup score recap carousel design" style="width:100%; display:block;">
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <span class="section-tag mono">06 · Skills & Tools</span>
+    <h2 class="section-title reveal">What I bring to the table.</h2>
+    <div class="skills-grid reveal">
+      <div>
+        <span class="group-label">Core skills</span>
+        <div class="pill-group">
+          <span class="pill">Social Media Management</span>
+          <span class="pill">Community Management</span>
+          <span class="pill">Collaboration Management</span>
+          <span class="pill">Social Media Ads</span>
+          <span class="pill">Canva Editing</span>
+          <span class="pill">Banner Campaigns</span>
+          <span class="pill">KOL Management</span>
+        </div>
+      </div>
+      <div>
+        <span class="group-label">Tools</span>
+        <div class="pill-group">
+          <span class="pill tool">Hootsuite</span>
+          <span class="pill tool">SocialBee</span>
+          <span class="pill tool">CapCut</span>
+          <span class="pill tool">Buffer</span>
+          <span class="pill tool">Ahrefs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <span class="section-tag mono">07 · Education</span>
+    <h2 class="section-title reveal">Foundations.</h2>
+    <div class="reveal">
+      <div class="edu-card">
+        <div class="edu-school">La Conception College</div>
+        <div class="edu-course">Bachelor of Science in Business Administration — Major in Marketing Management</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-school">First City Providential College — Senior High</div>
+        <div class="edu-course">Accountancy and Business Management</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="reveal">Let's grow your <span class="grad">community</span> together.</h2>
+    <p class="about-text reveal" style="margin:0 auto;">Open to new opportunities in social media, community, and KOL management.</p>
+    <a class="contact-email reveal" href="mailto:joshuacaminade6@gmail.com">joshuacaminade6@gmail.com</a>
+    <div class="contact-links reveal">
+      <a class="contact-link" href="https://t.me/FynnBD" target="_blank" rel="noopener">
+        <span class="contact-link-label mono">Telegram</span>
+        <span class="contact-link-value">@FynnBD</span>
+      </a>
+      <a class="contact-link" href="https://wa.me/639311282767" target="_blank" rel="noopener">
+        <span class="contact-link-label mono">WhatsApp</span>
+        <span class="contact-link-value">+63 931 128 2767</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Joshua Caminade. Built with intention.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
